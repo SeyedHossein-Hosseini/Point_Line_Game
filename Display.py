@@ -7,7 +7,7 @@ class Display:
     def display_board(self, board, player_lines):
         pass
 
-    # (Moein)
+    # (Mr. Moein)
     def display_square_complete(self, checker_complete_squares):
         pass
 
