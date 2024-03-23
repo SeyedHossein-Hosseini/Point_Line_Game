@@ -1,2 +1,2 @@
 # Point_Line_Game
-Implementation of point -line game
+Implementation of this fantastic PointLine game
