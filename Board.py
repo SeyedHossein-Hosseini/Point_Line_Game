@@ -1,17 +1,33 @@
 class Board:
-    def __init__(self, board_size):
-        # alphabet_str = "abcdefghij"
-        # self.board_size = board_size
-        # points = ['a1', 'a2', 'a3', ..., ]
-        pass
+    def __init__(self):
+        self.board_s = 0
+        self.points = [ ]
+
 
     # create list of board and insert into Display class (Moein)
     def create_board(self):
-        pass
+        alphabet = 'abcdefghij'
+
+        board_points = []
+        for i in range (1,self.board_s+1):
+            for j in range (0,self.board_s):
+                board_points.append(alphabet[j]+str(i))
+        self.points = board_points
 
     # 3-10 (Moein)
     def board_size(self):
-        pass
+        print('Please enter size of the game (between 3 and 10):')
+        while True:
+            size = input ('')
+            try:
+                self.board_s = int(size)
+                if self.board_s > 10 or self.board_s < 3:
+                    print("Your number isn't between 3 and 10:")
+                else:
+                    break
+            except:
+                print('Enter a number:')
+        return self.board_s
 
     def full(self):
         pass
@@ -21,4 +37,3 @@ class Board:
 
     def clear(self):
         pass
-

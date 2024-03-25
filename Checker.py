@@ -2,7 +2,7 @@ class Checker:
     def __init__(self) -> None:
         pass
 
-    # it has player_lines (hosein) 
+    # it has player_lines (Hossein) 
     def square_complete(self, player_lines):
         # returns [('a1', 'a2', 'b1', 'b2'), ...] or None
         pass
